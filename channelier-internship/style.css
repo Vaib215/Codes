@@ -115,48 +115,11 @@ nav ul li a {
     justify-content: center;
 }
 
-.product-container {
+.product-container video {
     position: absolute;
-    bottom: 200px;
-    left: 400px;
-    animation: rotate 10s linear infinite;
-}
-
-
-.product {
-    position: absolute;
-    --size: calc(100vw*0.2);
-    height: var(--size);
-    transform: rotate(var(--tilt)) translateY(calc(var(--size)*3*-1));
-    top: -100px;
-    left: 50px;
-    transform-origin: center;
-    animation: tofro 2s ease-out forwards alternate infinite;
-    scale: 0.5;
-}
-
-@keyframes tofro {
-    0% {
-        transform: rotate(var(--tilt)) translateY(calc(var(--size)*3*-1));
-        opacity: 1;
-    }
-    60% {
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(var(--tilt)) translateY(0);
-        opacity: 0;
-    }
-}
-
-.logo-award {
-    height: 30vh;
-    transform-style: preserve-3d;
-    transform-origin: 135px -110px;
-    transform: translate(0%,-80%) rotateX(0deg) scale(1.5);
-    left: 50%;
-    position: absolute;
-    top: 36%;
+    top: 139px;
+    left: -570px;
+    scale: 0.7;
 }
 
 #particles-js {
