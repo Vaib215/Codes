@@ -80,21 +80,47 @@ nav ul li a {
 }
 
 .award-cat {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 1em;
     padding: 3em;
 }
 
+.award-cat.active {
+    display: flex;
+}
+
 .award-cat h2 {
     font-size: 2.5em;
     font-weight: 300;
+    animation: enter 5s ease-in-out;
+}
+
+@keyframes enter {
+    0%, 100% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    5%,95% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .award-cat p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.25em;
     font-weight: lighter;
+    animation: fade 5s ease-in-out;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%,90% {
+        opacity: 1;
+    }
 }
 
 .hero .hero-text p {
